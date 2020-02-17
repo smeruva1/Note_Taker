@@ -1,13 +1,43 @@
-[{
-  "title": "tests",
-  "body": "asfdfsd",
-  "journal": "food"
-}, {
-  "title": "lskfjsdlk",
-  "body": "sdjlfkjdsklf",
-  "journal": "excercise"
-}, {
-  "title": "ouch",
-  "body": "dude",
-  "journal": "food"
-}]
+[
+  {
+    "id": "1",
+    "title": "tests",
+    "body": "asfdfsd",
+    "journal": "food"
+  },
+  {
+    "id": "2",
+    "title": "lskfjsdlk",
+    "body": "sdjlfkjdsklf",
+    "journal": "excercise"
+  },
+  {
+    "id": "3",
+    "title": "ouch",
+    "body": "dude",
+    "journal": "food"
+  },
+  {
+    "title": "newtitle",
+    "body": "newbody",
+    "journal": "newjournal",
+    "id": "4"
+  },
+  {
+    "title": "newtitle5",
+    "body": "newbody5",
+    "journal": "newjournal5",
+    "id": "5"
+  },
+  {
+    "title": "newtitle6",
+    "body": "newbody6",
+    "journal": "newjournal6",
+    "id": "6"
+  },
+  {
+    "title": "Hi",
+    "text": "Hello",
+    "id": "7"
+  }
+]
