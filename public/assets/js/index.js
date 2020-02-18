@@ -9,6 +9,7 @@ var activeNote = {};
 
 // A function for getting all notes from the db
 var getNotes = function() {
+  console.log("getNotes function called, will render the notes page");
   return $.ajax({
     url: "/api/notes",
     method: "GET"
@@ -17,6 +18,8 @@ var getNotes = function() {
 
 // A function for saving a note to the db
 var saveNote = function(note) {
+  console.log("saveNote function called, call the post route");
+  console.log(note);
   return $.ajax({
     url: "/api/notes",
     data: note,
@@ -26,6 +29,8 @@ var saveNote = function(note) {
 
 // A function for deleting a note from the db
 var deleteNote = function(id) {
+  console.log("deleteNote function called, call the delete method for below id");
+  console.log(id);
   return $.ajax({
     url: "api/notes/" + id,
     method: "DELETE"
@@ -37,11 +42,13 @@ var renderActiveNote = function() {
   $saveNoteBtn.hide();
 
   if (activeNote.id) {
+    console.log("User selected a existing note, show it on RHS to edit");
     $noteTitle.attr("readonly", true);
     $noteText.attr("readonly", true);
     $noteTitle.val(activeNote.title);
     $noteText.val(activeNote.text);
   } else {
+    console.log("user trying to enter new Note");
     $noteTitle.attr("readonly", false);
     $noteText.attr("readonly", false);
     $noteTitle.val("");
@@ -51,6 +58,7 @@ var renderActiveNote = function() {
 
 // Get the note data from the inputs, save it to the db and update the view
 var handleNoteSave = function() {
+  console.log("save button, get value from input box");
   var newNote = {
     title: $noteTitle.val(),
     text: $noteText.val()
