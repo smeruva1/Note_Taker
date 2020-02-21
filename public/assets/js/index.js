@@ -113,6 +113,8 @@ var handleRenderSaveBtn = function() {
 
 // Render's the list of note titles
 var renderNoteList = function(notes) {
+  console.log("inside renderNoteList - going to loop notes data and create html li elements");
+
   $noteList.empty();
 
   var noteListItems = [];
@@ -136,6 +138,8 @@ var renderNoteList = function(notes) {
 // Gets notes from the db and renders them to the sidebar
 var getAndRenderNotes = function() {
   return getNotes().then(function(data) {
+    console.log("inside getAndRenderNotes --- going to call renderNoteList");
+    console.log(data);
     renderNoteList(data);
   });
 };

@@ -1,15 +1,14 @@
-const express = require('express');
-const router = express.Router();
+const router = require('express').Router();
 
-const notesArray = require('./journal.json');
+const notesArray = require('../../journal.json');
 const path = require('path');
 const fs = require('fs');
 
 
 //display all notes
 // ===========================================================
-router.get('/api/notes',function(req, res) {
-    return res.json(notesArray);
+router.get('/api/notes', (req, res) => {
+    res.json(notesArray);
 }); 
 
 //create new note - takes in JSON input
@@ -37,7 +36,7 @@ router.get('/api/notes',function(req, res) {
     console.log(notesArray);
     
     fs.writeFileSync(
-        path.join(__dirname, './journal.json'),
+        path.join(__dirname, '../../journal.json'),
         JSON.stringify(notesArray, null, 2)
     );
 
