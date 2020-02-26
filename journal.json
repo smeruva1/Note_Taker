@@ -1,83 +1,12 @@
 [
   {
-    "id": "1",
-    "title": "tests",
-    "body": "asfdfsd",
-    "journal": "food"
+    "title": "test",
+    "text": "test",
+    "id": "1"
   },
   {
-    "id": "2",
-    "title": "lskfjsdlk",
-    "body": "sdjlfkjdsklf",
-    "journal": "excercise"
-  },
-  {
-    "id": "3",
-    "title": "ouch",
-    "body": "dude",
-    "journal": "food"
-  },
-  {
-    "title": "newtitle",
-    "body": "newbody",
-    "journal": "newjournal",
+    "title": "note4",
+    "text": "note4",
     "id": "4"
-  },
-  {
-    "title": "newtitle5",
-    "body": "newbody5",
-    "journal": "newjournal5",
-    "id": "5"
-  },
-  {
-    "title": "newtitle6",
-    "body": "newbody6",
-    "journal": "newjournal6",
-    "id": "6"
-  },
-  {
-    "title": "Hi",
-    "text": "Hello",
-    "id": "7"
-  },
-  {
-    "title": "newnote5",
-    "text": "newtitle5",
-    "id": "8"
-  },
-  {
-    "title": "Chrometest5",
-    "text": "Chrome Title 5",
-    "id": "9"
-  },
-  {
-    "title": "Note56",
-    "text": "Notetest67",
-    "id": "10"
-  },
-  {
-    "title": "r",
-    "text": "r",
-    "id": "11"
-  },
-  {
-    "title": "eeeddd",
-    "text": "wwwss",
-    "id": "12"
-  },
-  {
-    "title": "Nnnn",
-    "text": "Mmmm",
-    "id": "13"
-  },
-  {
-    "title": "18thnew",
-    "text": "18thtitle",
-    "id": "14"
-  },
-  {
-    "title": "Testing20",
-    "text": "Note20",
-    "id": "15"
   }
 ]

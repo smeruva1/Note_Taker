@@ -1,6 +1,6 @@
-const express = require('express');
+//const express = require('express');
+const router = require('express').Router();
 const path = require('path');
-const router = express.Router();
 
 // Routes
 // Basic route that sends the user first to the AJAX Page

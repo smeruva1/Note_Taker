@@ -1,20 +1,15 @@
 // Dependencies
 // ===========================================================
-//const notesArray = require('./journal.json');
-const path = require('path');
-const fs = require('fs');
+// const path = require('path');
+// const fs = require('fs');
 
 const apiRoutes = require('./routes/apiRoutes/notes-route');
-const htmlRoutes = require('./routes/htmlRoutes/html-route');
+const htmlRoutes = require('./routes/htmlRoutes/html-route');  
 
 
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3001;
-
-//import all routes at once
-// const routes = require('./routes');
-
 
 //Sets up the Express app to handle data parsing
 app.use(express.urlencoded({extended: true}));
